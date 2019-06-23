@@ -2,7 +2,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint \"src/**/*.ts\"",
-    "start": "nodemon src/index.ts"
+    "start": "nodemon src/index.ts",
+    "test": "jest"
   },
   "husky": {
     "hooks": {
