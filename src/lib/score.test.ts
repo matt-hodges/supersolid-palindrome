@@ -24,7 +24,7 @@ const highScores = [
 ];
 
 describe('the isNewHighScore function', () => {
-	test('should return true when there are less than 5 high score', () => {
+	test('should return true when there are less than 5 high scores', () => {
 		expect(isNewHighScore(4, [
 			highScores[0],
 			highScores[1],
@@ -37,6 +37,10 @@ describe('the isNewHighScore function', () => {
 
 	test('should return true when the new score is higher than the lowest high score', () => {
 		expect(isNewHighScore(6, highScores)).toBe(true);
+	});
+
+	test('should return true when the new score is the same as the lowest high score', () => {
+		expect(isNewHighScore(5, highScores)).toBe(true);
 	});
 });
 
