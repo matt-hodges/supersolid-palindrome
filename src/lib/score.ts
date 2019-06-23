@@ -5,7 +5,7 @@ export interface Score {
 
 export const isNewHighScore = (score: number, highScores: Score[]): boolean => {
 	return highScores.length < 5 ||
-		score > highScores[highScores.length - 1].points;
+		score >= highScores[highScores.length - 1].points;
 };
 
 export const updateHighScores = (newEntry: Score, highScores: Score[]): Score[] => {
