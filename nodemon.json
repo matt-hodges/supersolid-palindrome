@@ -1,0 +1,10 @@
+
+{
+	"restartable": "rs",
+	"verbose": false,
+	"watch": [
+		"src/**/*.{j,t}s"
+	],
+	"ext": "js,json,ts",
+	"exec": "ts-node src/index.ts"
+}
