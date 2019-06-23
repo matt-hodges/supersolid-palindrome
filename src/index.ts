@@ -1,8 +1,10 @@
 import express, { Request, Response } from 'express';
+import path from 'path';
 
 const app = express();
 
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, '../')));
+app.set('view engine', 'html');
 
 app.get('/', (req: Request, res: Response) => {
 	res.render('index');
